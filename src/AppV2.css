@@ -1,0 +1,107 @@
+
+.app-container {
+  padding: 1rem;
+}
+
+.input-field {
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 200px;
+}
+
+.button {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+.weather-result {
+  margin-top: 1rem;
+}
+
+.error-message {
+  background-color: red;
+  color: white;
+  padding: 0.5rem;
+  margin-top: 1rem;
+  border-radius: 4px;
+}
+
+.api-key-usage {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  padding: 10px;
+  background-color: lightgray;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.api-key-usage h4 {
+  margin-bottom: 10px;
+}
+
+.api-key-usage div {
+  margin-bottom: 5px;
+}
+
+.api-key-limit-reached {
+  color: green;
+  margin-left: 5px;
+}
+
+/*Donut*/
+.loading-spinner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0;
+  gap: 0.75rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.donut {
+  width: 24px;
+  height: 24px;
+  border: 4px solid #f3f3f3; 
+  border-top: 4px solid #007bff; 
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+ /* Stacked display */
+.input-group {
+  display: flex;
+  flex-direction: column; 
+  gap: 0.5rem;            
+  max-width: 300px;      
+}
+
+@media (min-width: 600px) {
+  .input-group {
+    flex-direction: row;
+    gap: 1rem;
+  }
+  .input-group label {
+    margin-right: 0.5rem;
+  }
+}
+
+.api-key-usage {
+}
+
